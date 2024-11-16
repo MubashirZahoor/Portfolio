@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303b34;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link {
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(182, 207, 186);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    padding-top: 0; 
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:2rem;
+    
+}
+.discription{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    padding:10px;
+}
+
+
+.main-headings {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:2rem;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.project-tile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  .gallery-img {
+    width: 600px;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #DCA927;
+  }
+
+  .icons {
+    padding: 10px;
+    display: flex;
+    gap: 10px; /* Adds space between icons */
+    justify-content: center; /* Centers icons within the container */
+    
+}
+
+.logos {
+    padding: 10px;
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Default icon color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.logos:hover {
+    font-size: 30px;
+    
+}
+.nav-link:hover {
+    color:#DCA927;
+
+
+}
+@media (max-width: 768px) {
+    .gallery-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-tile {
+        gap: 8px;
+        padding: 10px 5px;
+    }
+}
+.padding {
+    padding-bottom: 100px;
+}
